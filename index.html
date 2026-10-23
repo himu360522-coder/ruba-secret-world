@@ -1,0 +1,690 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090609">
+<title>Only for Ruba 🖤</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+ background:#090609;color:#f8eeee;
+ font-family:Georgia,"Noto Serif Bengali",serif;
+ line-height:1.9;overflow-x:hidden
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;
+ background:radial-gradient(ellipse at top,#40101d66,transparent 60%);
+ z-index:-1
+}
+.heart{
+ position:fixed;bottom:-30px;color:#ff3157;
+ animation:float 9s linear infinite;opacity:.5;
+ pointer-events:none;z-index:-1
+}
+@keyframes float{
+ from{transform:translateY(0) rotate(0);opacity:0}
+ 15%{opacity:.5}
+ to{transform:translateY(-110vh) rotate(40deg);opacity:0}
+}
+header{
+ min-height:100vh;display:flex;flex-direction:column;
+ align-items:center;justify-content:center;text-align:center;
+ padding:28px 20px
+}
+.tag{color:#ff718b;letter-spacing:4px;font-size:11px}
+h1{
+ color:#ff4568;font-size:clamp(36px,9vw,65px);
+ line-height:1.3;margin:22px 0;
+ text-shadow:0 0 25px #ff174466
+}
+.subtitle{color:#cdbfc4;max-width:450px;font-size:15px}
+button,.btn{
+ border:1px solid #ff4568;background:#d91f46;color:white;
+ padding:12px 22px;border-radius:30px;font-size:14px;
+ cursor:pointer;text-decoration:none;display:inline-block;
+ transition:.25s
+}
+button:hover,.btn:hover{background:#ff4568;transform:translateY(-2px)}
+.outline{background:transparent}
+nav{
+ display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+ padding:12px;position:sticky;top:0;z-index:5;
+ background:#090609f2;border-bottom:1px solid #54202d
+}
+nav a{color:#e8cbd2;text-decoration:none;font-size:12px;padding:5px}
+section{padding:70px 20px;max-width:850px;margin:auto}
+.kicker{color:#ff718b;letter-spacing:3px;font-size:11px;text-align:center}
+h2{text-align:center;color:#ff4568;font-size:30px;margin:8px 0 25px}
+.intro{text-align:center;color:#cdbfc4;margin-bottom:30px}
+.card{
+ background:linear-gradient(145deg,#1c1117,#100b10);
+ border:1px solid #572333;border-radius:18px;
+ padding:24px;margin:18px 0;box-shadow:0 8px 30px #0005
+}
+.card h3{color:#ff718b;margin-bottom:10px;font-size:19px}
+.card p{color:#e1d1d5;font-size:15px}
+.number{color:#ff4568;font-size:12px;letter-spacing:2px}
+.hidden{display:none}
+.reveal{animation:appear .7s ease}
+@keyframes appear{
+ from{opacity:0;transform:translateY(15px)}
+ to{opacity:1;transform:translateY(0)}
+}
+.center{text-align:center}
+.big-heart{font-size:42px;display:block;margin:15px}
+.quote{
+ border-left:2px solid #ff4568;padding-left:18px;
+ color:#f2c7d1;font-style:italic;margin:20px 0
+}
+.letter{white-space:pre-line;color:#e9d9df;font-size:15px}
+input[type=file]{
+ width:100%;margin:14px 0;color:#d8c5cb;font-size:13px
+}
+audio{width:100%;margin-top:15px}
+.small{font-size:12px;color:#9d8991;margin-top:12px}
+footer{text-align:center;padding:40px 20px;color:#b49aa3;font-size:12px}
+hr{border:0;border-top:1px solid #47202c;margin:20px 0}
+  
+/* Romantic Entrance Animation */
+#love-entrance {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: radial-gradient(
+    circle at center,
+    #3d0b1b,
+    #090609 75%
+  );
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.entrance-content {
+  max-width: 420px;
+  animation: entranceAppear 1.5s ease both;
+}
+
+.big-heart {
+  font-size: 85px;
+  cursor: pointer;
+  display: inline-block;
+  filter: drop-shadow(0 0 18px #ff174f);
+  animation: heartBeat 1.3s infinite;
+  user-select: none;
+}
+
+.entrance-small {
+  color: #ff7895;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-top: 18px;
+}
+
+.entrance-content h1 {
+  color: #fff0f3;
+  font-size: 28px;
+  margin: 12px 0;
+}
+
+.entrance-message {
+  color: #eacbd2;
+  margin: 12px 0 24px;
+}
+
+.entrance-content button {
+  background: linear-gradient(135deg, #ff3157, #a90035);
+  color: white;
+  border: 1px solid #ff8299;
+  border-radius: 30px;
+  padding: 14px 26px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 0 25px #ff174f55;
+}
+
+#love-entrance.leaving {
+  opacity: 0;
+  transform: scale(1.12);
+  pointer-events: none;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.16); }
+}
+
+@keyframes entranceAppear {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+
+<body>
+
+ 
+<div id="hearts"></div>
+
+
+<header id="home">
+ <div class="tag">A LITTLE SECRET FOR YOU</div>
+ <h1>Only for Ruba 🖤</h1>
+ <p class="subtitle">
+  কিছু গল্প হঠাৎ শুরু হয়।<br>
+  কিছু মানুষ অচেনা থেকে একদিন সবচেয়ে আপন হয়ে যায়।
+ </p>
+ <span class="big-heart">♥</span>
+ <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+  Open Our Story ♡
+ </button>
+ <p class="small">একটা ছোট্ট পৃথিবী, শুধু তোমার জন্য।</p>
+</header>
+<a href="#dates">Special Dates ❤️</a>
+<nav>
+ <a href="#story">Our Story</a>
+ <a href="#secret">Secret</a>
+ <a href="#letter">My Letter</a>
+ <a href="#music">Music</a>
+</nav>
+
+<section id="story">
+ <div class="kicker">CHAPTERS OF US</div>
+ <h2>অচেনা থেকে আপন</h2>
+ <p class="intro">
+  একটা ঝগড়া, একটা প্রশ্ন, কিছু অজুহাত,
+  একটা বন্ধুত্ব—আর তারপর ভালোবাসা।
+ </p>
+
+ <article class="card">
+  <div class="number">CHAPTER 01 · CLASS NINE</div>
+  <h3>শুরুটা হয়েছিল ঝগড়া দিয়ে!</h3>
+  <p>
+   তখন আমরা নবম শ্রেণিতে পড়তাম। একই Math আর Higher Math
+   প্রাইভেটে পড়তাম, কিন্তু একে অপরকে তেমন চিনতাম না।
+   এক শুক্রবারের পরীক্ষার দিন ব্যাগ নিয়ে একটা ছোট্ট ঘটনা
+   থেকে ঝগড়া শুরু হলো। বন্ধুরা আমাকে কিছু বলতে বলল,
+   আমিও তোমাকে বকেছিলাম—আর তুমিও আমাকে ছেড়ে কথা বলোনি!
+  </p>
+  <p class="quote">
+   কে জানত, এই ছোট্ট ঝগড়াটাই একদিন এত সুন্দর একটা গল্পের
+   প্রথম পৃষ্ঠা হয়ে থাকবে?
+  </p>
+ </article>
+
+ <article class="card">
+  <div class="number">CHAPTER 02 · ONE QUESTION</div>
+  <h3>তোমার সেই প্রশ্নটা...</h3>
+  <p>
+   নবম শ্রেণির শেষের দিকে আমি প্রাইভেট ছেড়ে দিয়েছিলাম।
+   পরে স্যারের কাছে গিয়ে তোমার সঙ্গে দেখা।
+   তুমি হঠাৎ জিজ্ঞেস করলে—
+   “তুমি হুট করে private ছেড়ে দিলে কেন?”
+  </p>
+  <p>
+   প্রশ্নটা হয়তো তোমার কাছে সাধারণ ছিল, কিন্তু আমার কাছে
+   সেটা আলাদা হয়ে রইল। তখন থেকেই তোমাকে নতুন করে
+   খেয়াল করতে শুরু করেছিলাম।
+  </p>
+ </article>
+
+ <article class="card">
+  <div class="number">CHAPTER 03 · CLASS TEN</div>
+  <h3>আবার দেখা, আবার কথা</h3>
+  <p>
+   দশম শ্রেণিতে Biology প্রাইভেটে আবার দেখা হলো।
+   একটা ছোট্ট অজুহাত আর পরিচিতদের মাধ্যমে Instagram-এ
+   কথা শুরু হলো—মার্চ মাসের ১৫ থেকে ১৭ তারিখের মধ্যে
+   কোনো একসময়।
+  </p>
+  <p>
+   প্রথমে কথাগুলো সাধারণ ছিল। কিন্তু কখন যে তোমার সঙ্গে
+   কথা বলা আমার দিনের একটা অংশ হয়ে উঠল, বুঝতেই পারিনি।
+  </p>
+ </article>
+
+ <article class="card">
+  <div class="number">CHAPTER 04 · UNSPOKEN FEELINGS</div>
+  <h3>বন্ধুত্বের আড়ালে অন্য কিছু</h3>
+  <p>
+   তোমার আরেকজনকে নিয়ে নানা কথা শুনেছিলাম।
+   তাই নিজেকে বোঝানোর চেষ্টা করেছিলাম যে তোমাকে ভুলে
+   যাওয়া উচিত। অন্য একটা সম্পর্কেও জড়িয়েছিলাম,
+   কিন্তু নিজের অনুভূতিগুলোকে সেভাবে সরাতে পারিনি।
+  </p>
+  <p>
+   তখন মনে হতো, তোমার প্রেমিক হতে না পারলেও অন্তত
+   বন্ধু হয়ে থাকতে পারলেই হয়তো যথেষ্ট।
+  </p>
+ </article>
+
+ <article class="card">
+  <div class="number">CHAPTER 05 · FRIEND TO BEST FRIEND</div>
+  <h3>কখন যে আপন হয়ে গেলে</h3>
+  <p>
+   ক্লাসমেট থেকে বন্ধু, বন্ধু থেকে কাছের বন্ধু,
+   তারপর Best Friend। আমাদের সম্পর্কটা ধীরে ধীরে
+   বদলাতে লাগল। তোমার সঙ্গে কথা বলা, তোমার দিনের
+   একটা অংশ হওয়া—এসব আমার কাছে বিশেষ হয়ে উঠল।
+  </p>
+  <p>
+   একসময় তোমার আর এক বন্ধুর মধ্যে দূরত্ব তৈরি হলে
+   আমি চেয়েছিলাম তোমাদের আবার মিলিয়ে দিতে।
+   কিন্তু সেদিনের ঘটনাগুলোর পর নিজের মনটা বুঝতে
+   পারলাম—তোমার জন্য আমার অনুভূতি শুধু বন্ধুত্ব নয়।
+  </p>
+ </article>
+
+ <article class="card">
+  <div class="number">CHAPTER 06 · THE CONFESSION</div>
+  <h3>মনের কথাটা বলে দেওয়া</h3>
+  <p>
+   তোমাকে নিজের অনুভূতির কথা বলার সময় ভয় ছিল।
+   যদি তুমি না বলো? যদি আমাদের বন্ধুত্বটাই হারিয়ে যায়?
+   এতদিনের আপন মানুষটাকে হারানোর ভয়টা কম ছিল না।
+  </p>
+  <p>
+   কিন্তু তুমি আমার অনুভূতিগুলো গ্রহণ করেছিলে।
+   যে কথাটা এতদিন মনের মধ্যে ছিল, সেটা অবশেষে
+   আমাদের দুজনের গল্পের অংশ হয়ে গেল।
+  </p>
+ </article>
+
+ <article class="card center">
+  <div class="number">JULY 06, 2026</div>
+  <span class="big-heart">❤️</span>
+  <h3>অবশেষে—আমরা!</h3>
+  <p>
+   ৬ জুলাই ২০২৬।<br>
+   বন্ধুত্বের গল্পটা নতুন একটা নাম পেল—ভালোবাসা।
+  </p>
+  <p class="quote">
+   তুমি একসময় আমার কাছে অচেনা ছিলে।
+   আজ তুমি আমার জীবনের গল্পের সবচেয়ে আপন অধ্যায়গুলোর একটি।
+  </p>
+ </article>
+
+ <p class="intro">
+  গল্পের কিছু মুহূর্ত সত্যি, কিছু কথা স্মৃতিকে সুন্দর
+  করে সাজানোর জন্য। কিন্তু অনুভূতিগুলো আমার নিজের।
+ </p>
+</section>
+
+<section id="secret">
+ <div class="kicker">TOP SECRET</div>
+ <h2>তোমার জন্য একটা গোপন কথা</h2>
+ <p class="intro">সব কথা সবার জন্য হয় না। কিছু কথা শুধু তোমার জন্য।</p>
+ <div class="card center">
+  <span class="big-heart">🔐</span>
+  <p>তুমি কি তোমার Secret Message খুলতে চাও?</p>
+  <br>
+  <button onclick="revealSecret()">Unlock My Secret ❤️</button>
+  <div id="secretText" class="hidden reveal">
+   <hr>
+   <p class="letter">
+    রুবা, একটা কথা জানো?
+
+    তোমাকে প্রথম দেখার দিন আমি জানতাম না,
+    তুমি একদিন আমার এতটা আপন হয়ে যাবে।
+
+    আমাদের গল্পটা নিখুঁত ছিল না।
+    শুরু হয়েছিল ঝগড়া দিয়ে,
+    তারপর কথা, বন্ধুত্ব, ভয় আর অনুভূতি।
+
+    কিন্তু এই গল্পের সবচেয়ে সুন্দর ব্যাপারটা হলো—
+    একসময় যে মানুষটাকে তেমন চিনতাম না,
+    আজ তার জন্যই এত কিছু লিখছি।
+
+    তুমি আমার গল্পের একটা সুন্দর অধ্যায়। 🖤
+   </p>
+  </div>
+ </div>
+</section>
+
+<section id="letter">
+ <div class="kicker">WORDS FROM MY HEART</div>
+ <h2>A Letter for Ruba 💌</h2>
+ <div class="card">
+  <p class="letter">প্রিয় রুবা,
+
+কীভাবে শুরু করব জানি না। কারণ আমাদের গল্পের শুরুটা এমন ছিল, যেটা হয়তো আমরা কেউই কল্পনা করিনি।
+
+একটা ছোট্ট ঝগড়া থেকে শুরু হয়ে তুমি আমার বন্ধু হলে, Best Friend হলে, তারপর এমন একজন হলে যার কাছে আমার অনুভূতিগুলো আর লুকিয়ে রাখা সম্ভব হয়নি।
+
+আমি জানি না ভবিষ্যতে আমাদের গল্পের প্রতিটা পৃষ্ঠা কেমন হবে। তবে আমি চাই, আমরা দুজন একে অপরের কথা শুনি, একে অপরকে বুঝি, ভুল হলে শুধরে নিই আর ভালো সময়গুলো একসঙ্গে উপভোগ করি।
+
+আমি চাই না আমাদের সম্পর্ক শুধু সুন্দর সুন্দর কথার মধ্যে সীমাবদ্ধ থাকুক। আমি চাই, আমাদের ব্যবহার, বিশ্বাস, সম্মান আর যত্নের মধ্যেও ভালোবাসাটা থাকুক।
+
+তুমি আমার কাছে কেন বিশেষ, সেটা হয়তো একটা চিঠিতে পুরোপুরি বোঝাতে পারব না। কিন্তু একটা কথা সত্যি—অচেনা থেকে আপন হয়ে ওঠার এই গল্পটা আমার কাছে অনেক মূল্যবান।
+
+আমাদের গল্পটা আমাদের মতো করেই সুন্দর হোক।
+
+ইতি,
+তোমার গল্পের সেই মানুষটা 🖤</p>
+ </div>
+ <p class="small center">
+  এই চিঠিতে তুমি চাইলে নিজের মনের আরও কথা যোগ করতে পারবে।
+ </p>
+</section>
+
+<!-- OUR SPECIAL DATES -->
+<section id="dates">
+  <div class="kicker">OUR MOST PRECIOUS MOMENTS</div>
+  <h2>Our Special Dates ❤️</h2>
+  <p class="intro">
+    কিছু তারিখ শুধু ক্যালেন্ডারে থাকে না,
+    মনের ভেতরেও চিরকাল থেকে যায়।
+    এগুলো আমাদের গল্পের কিছু বিশেষ মুহূর্ত।
+  </p>
+
+  <div class="card">
+    <div class="number">06 JULY 2026 · THE BEGINNING</div>
+    <h3>❤️ যেদিন আমরা এক হলাম</h3>
+    <p>
+      বন্ধুত্ব থেকে ভালোবাসার সম্পর্কে যাওয়ার দিন।
+      আমাদের গল্পের নতুন একটি অধ্যায় শুরু হয়েছিল
+      এই দিনটিতে।
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="number">28 JULY 2026 · A SPECIAL PROMISE</div>
+    <h3>🤍 আমাদের সেই কবুল</h3>
+    <p>
+      যেদিন আমরা ফেরেশতাকে সাক্ষী রেখে কবুল বলেছিলাম।
+      দিনটি আমাদের কাছে একটি বিশেষ স্মৃতি,
+      যা আমাদের গল্পে আলাদা জায়গা নিয়ে থাকবে।
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="number">12 OCTOBER 2026 · A SPECIAL MEMORY</div>
+    <h3>❤️ একটি মনে রাখার মতো মুহূর্ত</h3>
+    <p>
+      আমাদের প্রথম সময় নিয়ে করা চুমুর স্মৃতি।
+      আগের মুহূর্তগুলোর থেকে আলাদা,
+      এই দিনটি আমাদের ব্যক্তিগত স্মৃতির একটি বিশেষ অংশ।
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="number">16 OCTOBER 2026 · OUR SPECIAL CEREMONY</div>
+    <h3>💍 আমাদের সেই আয়োজন</h3>
+    <p>
+      বন্ধুদের উপস্থিতিতে কাজি, তিনজন সাক্ষী
+      এবং উকিল বাবাকে নিয়ে যে বিয়ের আয়োজন
+      করেছিলাম, সেই দিনটি আমাদের গল্পের আরেকটি
+      স্মরণীয় অধ্যায়।
+    </p>
+    <p class="small">
+      এই তারিখটি আমাদের ব্যক্তিগত স্মৃতির অংশ;
+      আয়োজনের আইনি বা ধর্মীয় বৈধতা এই লেখা দিয়ে নির্ধারিত হয় না।
+    </p>
+  </div>
+
+  <div class="card center">
+    <span class="big-heart">∞</span>
+    <h3>Our Story Continues...</h3>
+    <p>
+      আমাদের গল্প এখানেই শেষ নয়।
+      সামনে আরও অনেক সুন্দর স্মৃতি তৈরি হোক,
+      আর প্রতিটি স্মৃতি হয়ে উঠুক আমাদের কাছে মূল্যবান।
+    </p>
+    <p class="quote">
+      তুমি আমার গল্পের একটি বিশেষ অধ্যায়,
+      আর তোমার সঙ্গে কাটানো মুহূর্তগুলো
+      আমার কাছে স্মৃতির চেয়েও বেশি কিছু। 🖤
+    </p>
+  </div>
+</section>
+  
+
+
+<!-- END OUR SPECIAL DATES -->
+
+<section id="music">
+ <div class="kicker">OUR LITTLE SOUNDTRACK</div>
+ <h2>A Song for Us 🎧</h2>
+ <p class="intro">
+  এই জায়গায় আমাদের বিশেষ গানটি যোগ করা যাবে।
+ </p>
+ <div class="card center">
+  <span class="big-heart">♫</span>
+  <h3>Our Special Song</h3>
+  <p>ফোন থেকে একটি অডিও ফাইল বেছে নাও।</p>
+  <input type="file" id="songFile" accept="audio/*">
+  <audio id="player" controls class="hidden"></audio>
+  <p class="small">
+   এখানে বেছে নেওয়া গানটি এই ডিভাইসে চলবে।
+   অনলাইনে অন্য ফোনেও গান চালাতে পরে একটি অনলাইন অডিও লিংক যোগ করতে হবে।
+  </p>
+ </div>
+</section>
+
+<section id="open-when">
+  <div class="kicker">LITTLE LETTERS FOR YOU</div>
+  <h2>Open When... 💌</h2>
+  <p class="intro">
+    তোমার মনের জন্য কিছু ছোট্ট চিঠি।
+    যখন যেটা পড়তে ইচ্ছে করবে
+    সেটায় চাপ দিও।
+  </p>
+
+  <div class="card">
+    <button class="btn" onclick="showLoveNote('miss')">💌 যখন আমাকে মিস করবে</button>
+    <p id="note-miss" style="display:none">
+      দূরত্ব যতটুকুই হোক তুমি আমার ভাবনার খুব কাছের একজন।
+      কোনো সুন্দর মুহূর্ত দেখলে তোমার কথা মনে পড়ে।
+    </p>
+  </div>
+
+  <div class="card">
+    <button class="btn" onclick="showLoveNote('sad')">🥺 যখন মন খারাপ থাকবে</button>
+    <p id="note-sad" style="display:none">
+      সব দিন একরকম সুন্দর হয় না।
+      নিজের প্রতি একটু কোমল থেকো।
+      তোমার অনুভূতিগুলো গুরুত্বপূর্ণ।
+    </p>
+  </div>
+
+  <div class="card">
+    <button class="btn" onclick="showLoveNote('sleep')">🌙 ঘুমানোর আগে</button>
+    <p id="note-sleep" style="display:none">
+      আজকের সব ক্লান্তি পেছনে রেখে শান্তিতে ঘুমিও।
+      আগামী সকাল তোমার জন্য নতুন আনন্দ নিয়ে আসুক।
+    </p>
+  </div>
+
+  <div class="card">
+    <button class="btn" onclick="showLoveNote('love')">❤️ যখন ভালোবাসার কথা শুনতে ইচ্ছে করবে</button>
+    <p id="note-love" style="display:none">
+      তুমি আমার অনেক সাধারণ মুহূর্তকে স্মরণীয় করে দাও।
+      তোমার নিজের মতো থাকাটাই তোমার সুন্দর দিকগুলোর একটি।
+    </p>
+  </div>
+
+  <div class="card">
+    <button class="btn" onclick="showLoveNote('smile')">🫶 যখন একটু হাসতে ইচ্ছে করবে</button>
+    <p id="note-smile" style="display:none">
+      এই যে ম্যাডাম! একটু হাসো তো! 😄
+      তোমার ভালো থাকাটাই অনেক সুন্দর একটা ব্যাপার।
+    </p>
+  </div>
+</section>
+
+<section id="secret-envelope">
+  <div class="kicker">A LITTLE SECRET FOR YOU</div>
+  <h2>💌 Just For You</h2>
+  <p class="intro">
+    এই খামটা শুধু তোমার জন্য।
+    খুলে দেখবে? ❤️
+  </p>
+
+  <div class="card" style="text-align:center;">
+    <button
+      class="btn"
+      onclick="document.getElementById('secret-letter').style.display =
+      document.getElementById('secret-letter').style.display === 'block'
+      ? 'none' : 'block';">
+      💌 Open Your Secret Letter
+    </button>
+
+    <div id="secret-letter" style="display:none; margin-top:20px;">
+      <h3>শুধু তোমার জন্য Ruba ❤️</h3>
+      <p>
+        তোমাকে নিয়ে আমার গল্পটা আমার কাছে ভীষণ স্পেশাল।
+        Crush থেকে Friend
+        Friend থেকে Bestie
+        আর Bestie থেকে তুমি আমার প্রিয় মানুষ।
+      </p>
+      <p>
+        তুমি আমার অনেক সাধারণ মুহূর্তকে সুন্দর স্মৃতিতে
+        পরিণত করেছ। তোমার হাসি আর তোমার নিজের মতো থাকাটা
+        আমার কাছে অনেক মূল্যবান।
+      </p>
+      <p>
+        এই ছোট্ট ওয়েবসাইটটা তোমার জন্য আমার মনের
+        কিছু কথা জমিয়ে রাখার জায়গা। 🖤
+      </p>
+      <p>Always stay happy, Ruba. ❤️</p>
+      <button class="btn outline"
+        onclick="document.getElementById('secret-letter').style.display='none';">
+        Close Letter ✉️
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="tap-surprise">
+  <div class="kicker">A LITTLE HAPPINESS</div>
+  <h2>Tap for a Surprise ❤️</h2>
+  <p class="intro">
+    একটা হার্টে চাপ দাও
+    তোমার জন্য ছোট্ট একটা কথা আছে 🖤
+  </p>
+
+  <div class="card" style="text-align:center;">
+    <button
+      class="btn"
+      style="font-size:24px; padding:18px 28px;"
+      onclick="showSurprise()">
+      ❤️ Tap Me ❤️
+    </button>
+
+    <p id="surprise-message"
+       style="display:none; margin-top:20px; font-size:17px;">
+    </p>
+  </div>
+</section>
+
+<footer>
+ <p>Made with love, for Ruba 🖤</p>
+ <p>অচেনা থেকে আপন · Our Story</p>
+ <p class="small">কিছু গল্প হৃদয়ে লেখা থাকে।</p>
+ <br>
+<a href="#home" class="btn outline">Back to Top ↑</a>
+  <section id="memories">
+  <div class="kicker">OUR LITTLE WORLD</div>
+  <h2>Our Memories 📸</h2>
+  <p class="intro">
+    কিছু মুহূর্ত ছবি হয়ে থাকে
+    আর কিছু মুহূর্ত হৃদয়ে। 🖤
+  </p>
+
+  <div class="card">
+    <p>আমাদের স্মৃতিগুলো এখানে সাজানো থাকবে ❤️</p>
+  </div>
+</section>
+</footer>
+
+<script>
+  
+function showLoveNote(type) {
+  const ids = ['miss', 'sad', 'sleep', 'love', 'smile'];
+
+  ids.forEach(function(id) {
+    const note = document.getElementById('note-' + id);
+
+    if (note) {
+      if (id === type) {
+        note.style.display =
+          note.style.display === 'none' ? 'block' : 'none';
+      } else {
+        note.style.display = 'none';
+      }
+    }
+  });
+}
+const surpriseMessages = [
+  "তুমি আমার গল্পের সবচেয়ে সুন্দর অধ্যায়। 🖤",
+  "হাজার ব্যস্ততার মাঝেও তোমার কথা মনে পড়ে। 🌙",
+  "তোমার সঙ্গে কাটানো ছোট মুহূর্তগুলোও আমার কাছে স্পেশাল। ❤️",
+  "তুমি যেমন ঠিক তেমনভাবেই আমার কাছে মূল্যবান। 🫶",
+  "এই ছোট্ট সারপ্রাইজটা শুধু তোমার জন্য, Ruba। 💌",
+  "তোমার মুখে হাসি থাকুক প্রতিটা দিন। 😊"
+];
+
+let surpriseIndex = -1;
+
+function showSurprise() {
+  surpriseIndex =
+    (surpriseIndex + 1) % surpriseMessages.length;
+
+  const message =
+    document.getElementById("surprise-message");
+
+  message.textContent =
+    surpriseMessages[surpriseIndex];
+
+  message.style.display = "block";
+}
+
+function revealSecret(){
+ const el=document.getElementById("secretText");
+ el.classList.remove("hidden");
+ el.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+
+
+const hearts=document.getElementById("hearts");
+
+for(let i=0;i<18;i++){
+ const h=document.createElement("span");
+ h.className="heart";
+ h.textContent=Math.random()>.5?"♥":"♡";
+ h.style.left=Math.random()*100+"%";
+ h.style.animationDuration=(7+Math.random()*9)+"s";
+ h.style.animationDelay=(-Math.random()*14)+"s";
+ h.style.fontSize=(12+Math.random()*20)+"px";
+ hearts.appendChild(h);
+}
+
+const songFile=document.getElementById("songFile");
+const player=document.getElementById("player");
+let currentSongURL=null;
+
+
+
+songFile.addEventListener("change",function(){
+ if(currentSongURL)URL.revokeObjectURL(currentSongURL);
+ const file=this.files[0];
+ if(!file)return;
+ currentSongURL=URL.createObjectURL(file);
+ player.src=currentSongURL;
+ player.classList.remove("hidden");
+ player.load();
+});
+  
+</script>
+</body>
+</html>
